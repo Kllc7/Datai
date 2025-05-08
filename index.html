@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DATAI</title>
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.53/build/spline-viewer.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="scroll-bar">
+<div class="scroll-progress"></div>
+<div class="checkpoint" style="top: 0%"></div>
+<div class="checkpoint" style="top: 25%"></div>
+<div class="checkpoint" style="top: 50%"></div>
+<div class="checkpoint" style="top: 75%"></div>
+<div class="checkpoint" style="top: 100%"></div>
+</div>
+<nav class="primary-nav">
+<a href="#" class="logo">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 2048 543" width="1200" height="350" xmlns="http://www.w3.org/2000/svg">
+<path transform="translate(24,47)" d="m0 0h218l27 3 25 6 20 6 16 7 15 8 16 11 10 8 15 14 9 11 11 15 14 27 6 17 8 32 3 24 1 33-1 26-3 26-8 35-7 19-10 21-12 17-9 10-13 13-17 12-16 8-20 8-18 5-21 4-25 3-36 2h-198l-1-1v-6l1-1 16-2 10-4 5-4 6-10 3-12v-352l-3-11-6-10-5-4-9-4-17-3zm165 7-13 2-8 4-5 6-4 13-1 263v82l1 18 3 12 5 8 6 4 10 3 12 1h18l16-2 17-5 21-11 13-11 10-10 10-14 11-20 8-22 7-26 4-26 2-19 1-17v-50l-2-30-4-29-6-24-8-24-13-25-13-16-14-13-21-12-18-6-17-3-12-1z" fill="#007bff"/>
+<path transform="translate(941,47)" d="m0 0h385l3 31 7 96v10h-12l-4-17-5-12-10-18-10-14-9-11-12-13-12-11-13-10-18-11-13-6-13-4-13-2h-11v373l1 13 3 10 4 6 9 8 10 3 17 2v7l-1 1h-182v-8l17-2 12-4 7-6 5-8 3-13 1-383-27 2-17 5-15 8-12 8-14 12-13 13-11 14-8 11-7 11-10 18-7 19-3 9h-12v-12l9-122z" fill="#007bff"/>
+<path transform="translate(709,47)" d="m0 0 3 1 9 24 8 20 33 84 9 23 15 38 13 33 19 48 16 41 11 28 8 20 8 21 9 20 10 14 6 5 8 4 1 1v5l-1 1h-156l-1-7 7-2 10-5 5-8 2-6v-17l-6-20-15-38-11-28-7-18-138-1-3 10-14 37-2 9v24l4 14 8 15 9 11 9 8 15 9 12 4 7 1 1 1v6l-1 1h-155l-1-1v-6l16-4 9-5 10-8 7-6 11-14 10-15 10-18 16-39 11-28 10-26 10-25 11-28 12-30 8-21 17-45 6-18-1-8-5-12-9-14-11-11-6-4v-2l19-3 16-5 24-11 15-9 13-9zm-56 105-4 8-11 29-8 20-12 31-12 30-8 21-10 25v4h129l1-4-9-24-15-38-12-31-8-20-11-28-9-23z" fill="#007bff"/>
+<path transform="translate(1608,47)" d="m0 0h2l14 35 33 84 15 38 26 66 14 36 21 53 12 31 15 38 7 16 9 15 7 7 11 5v6l-1 1h-156l-1-1v-7l10-2 7-4 6-10 1-4v-17l-3-12-15-38-18-46-3-8-137-1-11 28-8 24-2 11v11l4 17 8 17 12 14 13 10 14 7 14 3v8h-155l-1-7 18-5 11-7 12-10 9-11 7-10 11-18 11-23 10-26 10-25 11-28 14-35 22-56 9-24 13-34 6-18v-6l-8-18-10-13-9-9-6-4v-1l24-4 19-7 19-9 22-14zm-56 105-13 31-12 31-22 56-10 26-9 22v2h127l5-1-3-9-13-33-12-31-10-25-27-69z" fill="#007bff"/>
+<path transform="translate(1829,47)" d="m0 0h176v7l-19 3-8 3-5 4-6 12-2 10v351l2 11 5 10 8 7 8 3 17 2 1 4-1 4h-175l-1-1v-7l17-2 9-3 7-6 5-9 2-7 1-11v-336l-1-15-4-11-5-7-8-5-16-3-7-1z" fill="#007bff"/>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#007BFF"/>
+<stop offset="1" stop-color="#00BFFF"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="8" y1="8" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+<stop stop-color="#007BFF"/>
+<stop offset="1" stop-color="#00BFFF"/>
+</linearGradient>
+</defs>
+</svg>
+</a>
+<div class="nav-items">
+<a href="#mission" class="nav-item">Our Mission</a>
+<a href="#features" class="nav-item">Products</a>
+<a href="#about" class="nav-item">Prototype</a>
+<a href="#contact" class="nav-item">Contact</a>
+</div>
+<a href="#contact" class="nav-action-button">Join The Waitlist</a>
+</nav>
+<div class="scene-container">
+<spline-viewer url="https://prod.spline.design/05X7vr-A3GYevwIX/scene.splinecode"></spline-viewer>
+<div class="text-container">
+<div class="animated-text" id="text1">Marketing Made Easy.
+<p id="sub">Every great idea starts with a stroke of genius.
+DATAI turns your vision into campaigns faster than ever — without the guesswork.</p>
+</div>
+<div class="side-content">
+<div class="content-block" id="block1">
+<div class="animated-text">See What Others Miss.</div>
+<p class="content-paragraph">DATAI analyzes your data to uncover what matters most.</p>
+<div class="feature-list">
+<div class="feature-item">Know Before You Act: Analyze past performance trends to predict campaign success rates with precision.</div>
+<div class="feature-item">Find Your True Audience: Discover your ideal customers and how to reach them.</div>
+<div class="feature-item">Grow Faster: Cut your time to launch with instant data insights.</div>
+</div>
+</div>
+<div class="content-block" id="block2">
+<div class="animated-text">Create Articles, Posts, and Videos Effortlessly.</div>
+<p class="content-paragraph">DATAI transforms your ideas into impactful blog posts.</p>
+<div class="feature-list">
+<div class="feature-item">Text to Video: Convert your ideas into polished videos ready for any platform.</div>
+<div class="feature-item">Text to Social Media Post: Create perfectly crafted content for every platform.</div>
+<div class="feature-item">Text to Blog Posts: Transform concepts into detailed, structured articles.</div>
+</div>
+</div>
+<div class="content-block" id="block3">
+<div class="animated-text">Meet ELITH: Your Always-On Community Manager</div>
+<p class="content-paragraph">Imagine never missing a question or comment. Your always-on community manager engages with your audience 24/7.</p>
+<div class="feature-list">
+<div class="feature-item">Authentic Conversations: Manage community engagement naturally and effectively.</div>
+<div class="feature-item">Always On: Keep your platforms active 24/7.</div>
+<div class="feature-item">On-Brand Responses: Deliver consistent, professional replies.</div>
+</div>
+</div>
+<div class="content-block" id="block4">
+<div class="animated-text">Your Vision. Your Success.</div>
+<p class="content-paragraph">From your first idea to the final result.</p>
+<a href="#contact" class="action-button">Join the Revolution</a>
+</div>
+</div>
+</div>
+<div class="scroll-bar">
+<div class="scroll-progress"></div>
+<div class="checkpoint" style="top: 0%" data-index="0"></div>
+<div class="checkpoint" style="top: 25%" data-index="1"></div>
+<div class="checkpoint" style="top: 50%" data-index="2"></div>
+<div class="checkpoint" style="top: 75%" data-index="3"></div>
+<div class="checkpoint" style="top: 100%" data-index="4"></div>
+</div>
+<div class="scroll-instructions">Use mouse wheel to navigate the scene!</div>
+
+
+<section id="mission" class="section">
+
+<div class="section-content">
+<div class="mission-section">
+<div class="mission-header">
+<h2>Our Mission</h2>
+<p>We exist to democratize marketing. DATAI makes powerful, scalable tools accessible to everyone, breaking down barriers to growth and success.</p>
+</div>
+<div class="section-cta">
+    <a href="#contact" class="cta-button">
+      Start Your Journey
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<section id="about" class="section">
+<h2 class="section-header">Prototype</h2>
+<div class="section-content">
+    <div class="prototype-section">
+        <div class="prototype-container">
+          <div class="prototype-header">
+            <h2>Experience DATAI in Action</h2>
+            <p>Explore our interactive prototype to see how DATAI transforms marketing workflows.</p>
+          </div>
+          
+          <div class="prototype-frame">
+            <iframe 
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FDk9PwaXEE99Qx8IOqBkh5B%2FDatAI_514863%3Fnode-id%3D26544-72884%26t%3DYC4Ueg1HXngnZ6jx-1%26starting-point-node-id%3D26445%253A127023"
+              allowfullscreen
+            ></iframe>
+          </div>
+      
+        
+        </div>
+        <style>
+          .prototype-section {
+            padding: 0rem 0;
+            background: #ffffff;
+          }
+      
+          .prototype-container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 0rem;
+          }
+      
+          .prototype-header {
+            text-align: center;
+            margin-bottom: 1rem;
+          }
+      
+          .prototype-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+          }
+      
+          .prototype-header p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+          }
+      
+          .prototype-frame {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            margin: 2rem 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          }
+      
+          .prototype-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+          }
+      
+          .prototype-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+          }
+      
+          .feature-card {
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+          }
+      
+          .feature-card:hover {
+            transform: translateY(-5px);
+          }
+      
+          .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+          }
+      
+          .feature-card p {
+            color: #666;
+            line-height: 1.6;
+          }
+      
+          @media (max-width: 768px) {
+            .prototype-frame {
+              height: 400px;
+            }
+      
+            .prototype-header h2 {
+              font-size: 2rem;
+            }
+      
+            .prototype-container {
+              padding: 0 1rem;
+            }
+          }
+        </style>
+      </div>
+    </div>
+  
+    </section>
+
+</div>
+  
+  </div>
+
+
+  <script>
+    let currentTab = 'onetime';
+let currentAmount = 100;
+let currentCurrency = 'EUR';
+
+function switchTab(tab) {
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.style.background = 'transparent';
+        btn.style.color = '#3498db';
+    });
+    document.querySelector(`[data-tab="${tab}"]`).style.background = '#3498db';
+    document.querySelector(`[data-tab="${tab}"]`).style.color = 'white';
+
+    document.getElementById('monthlyPanel').style.display = tab === 'monthly' ? 'block' : 'none';
+    document.getElementById('onetimePanel').style.display = tab === 'onetime' ? 'block' : 'none';
+    
+    currentTab = tab;
+}
+
+function selectAmount(amount, type) {
+    currentAmount = amount;
+    document.getElementById('customAmount').value = amount;
+    
+    const panel = document.getElementById(`${type}Panel`);
+    panel.querySelectorAll('.amount-btn').forEach(btn => {
+        if (parseInt(btn.dataset.amount) === amount) {
+            btn.style.background = '#3498db';
+            btn.style.color = 'white';
+        } else {
+            btn.style.background = 'transparent';
+            btn.style.color = '#666';
+        }
+    });
+}
+
+function updateCustomAmount(value) {
+    currentAmount = parseInt(value);
+    document.querySelectorAll('.amount-btn').forEach(btn => {
+        btn.style.background = 'transparent';
+        btn.style.color = '#666';
+    });
+}
+
+function changeCurrency(currency) {
+    currentCurrency = currency;
+}
+
+function donate() {
+    console.log(`Donating ${currentAmount} ${currentCurrency} ${currentTab}`);
+    alert(`Thank you for your ${currentTab} donation of ${currentAmount} ${currentCurrency}!`);
+}
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize variables
+      const text1 = document.getElementById('text1');
+      const splineViewer = document.querySelector('spline-viewer');
+      const scrollBar = document.querySelector('.scroll-bar');
+      const scrollProgress = document.querySelector('.scroll-progress');
+      const checkpoints = document.querySelectorAll('.checkpoint');
+      const contentBlocks = document.querySelectorAll('.content-block');
+      const sections = document.querySelectorAll('.section');
+
+      let currentStep = 0;
+      const totalSteps = 3000;
+      const scrollSensitivity = 0.15;
+      let isSplineSceneComplete = false;
+
+      // Update visibility based on scroll progress
+      function updateVisibility(progress) {
+        // Scene content visibility
+        if (progress <= 0.2) {
+          text1.classList.add('text-visible');
+          contentBlocks.forEach(block => block.classList.remove('content-visible'));
+        } else {
+          text1.classList.remove('text-visible');
+          contentBlocks.forEach((block, index) => {
+            const blockStart = 0.2 + (index * 0.2);
+            const blockEnd = blockStart + 0.2;
+            if (progress > blockStart && progress <= blockEnd) {
+              block.style.opacity = 1;
+              block.style.transform = 'translateX(0)';
+            } else {
+              block.style.opacity = 0;
+              block.style.transform = index < 2 ? 'translateX(30px)' : 'translateX(-30px)';
+            }
+          });
+        }
+
+        // Update scroll progress and checkpoints
+        scrollProgress.style.height = `${progress * 100}%`;
+        checkpoints.forEach((checkpoint, index) => {
+          const checkpointProgress = index / (checkpoints.length - 1);
+          checkpoint.classList.toggle('active', progress >= checkpointProgress);
+        });
+
+        // Handle scene completion
+        if (progress >= 1) {
+          isSplineSceneComplete = true;
+          scrollBar.style.opacity = '0';
+          setTimeout(() => {
+            scrollBar.style.display = 'none';
+            enableNormalScrolling();
+          }, 300);
+        }
+      }
+
+      // Handle scroll events
+      function handleScroll(deltaY) {
+        if (!isSplineSceneComplete) {
+          currentStep = Math.max(0, Math.min(currentStep + (deltaY * scrollSensitivity), totalSteps));
+          const progress = currentStep / totalSteps;
+          if (splineViewer.isLoaded) {
+            splineViewer.setTime(currentStep);
+          }
+          updateVisibility(progress);
+        }
+      }
+
+      // Enable normal page scrolling
+      function enableNormalScrolling() {
+        document.body.style.overflowY = 'auto';
+        sections.forEach(section => {
+          section.style.opacity = '1';
+          section.style.pointerEvents = 'auto';
+        });
+      }
+
+      // Event listeners
+      window.addEventListener('wheel', (e) => {
+        if (!isSplineSceneComplete) {
+          e.preventDefault();
+          handleScroll(e.deltaY);
+        }
+      }, { passive: false });
+
+      // Touch event handling
+      let touchStartY = 0;
+      window.addEventListener('touchstart', (e) => {
+        if (!isSplineSceneComplete) {
+          touchStartY = e.touches[0].clientY;
+        }
+      }, { passive: true });
+
+      window.addEventListener('touchmove', (e) => {
+        if (!isSplineSceneComplete) {
+          const touchY = e.touches[0].clientY;
+          const deltaY = touchStartY - touchY;
+          handleScroll(deltaY * 2);
+          touchStartY = touchY;
+        }
+      }, { passive: true });
+
+      // Navigation handling
+      document.querySelectorAll('.nav-item').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+          
+          if (isSplineSceneComplete) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+          } else {
+            currentStep = totalSteps;
+            updateVisibility(1);
+            setTimeout(() => {
+              targetSection.scrollIntoView({ behavior: 'smooth' });
+            }, 300);
+          }
+        });
+      });
+
+      // Initialize scene
+      updateVisibility(0);
+
+      // Product slider functionality
+      const slider = document.querySelector('.product-slider');
+      const prevButton = document.querySelector('.prev-slide');
+      const nextButton = document.querySelector('.next-slide');
+
+      if (slider && prevButton && nextButton) {
+        prevButton.addEventListener('click', () => {
+          slider.scrollBy({ left: -340, behavior: 'smooth' });
+        });
+
+        nextButton.addEventListener('click', () => {
+          slider.scrollBy({ left: 340, behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
